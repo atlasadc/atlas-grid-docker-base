@@ -1,6 +1,6 @@
 FROM atlasadc/slc5
 ENV HEP_OSLIBS_VER 1.0.3-0
-MAINTAINER Alessandro De Salvo "Alessandro.DeSalvo@roma1.infn.it"
+LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # HEP OSLibs
 RUN yum -y install http://linuxsoft.cern.ch/wlcg/sl5/x86_64/HEP_OSlibs_SL5-${HEP_OSLIBS_VER}.x86_64.rpm

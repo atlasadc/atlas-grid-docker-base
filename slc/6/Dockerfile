@@ -1,6 +1,6 @@
 FROM atlasadc/slc6
 ENV HEP_OSLIBS_VER 1.1.4-1.el6
-MAINTAINER Alessandro De Salvo "Alessandro.DeSalvo@roma1.infn.it"
+LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # Additional packages
 RUN yum -y install http://linuxsoft.cern.ch/wlcg/sl6/x86_64/HEP_OSlibs_SL6-${HEP_OSLIBS_VER}.x86_64.rpm

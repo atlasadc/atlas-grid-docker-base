@@ -1,6 +1,6 @@
 FROM centos:7
 ENV HEP_OSLIBS_VER 7.2.5-1.el7.cern
-MAINTAINER Alessandro De Salvo "Alessandro.DeSalvo@roma1.infn.it"
+LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # HEP OSLibs
 RUN yum -y install epel-release

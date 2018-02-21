@@ -1,6 +1,6 @@
 FROM centos:6
 ENV HEP_OSLIBS_VER 1.1.4-1.el6
-MAINTAINER Alessandro De Salvo "Alessandro.DeSalvo@roma1.infn.it"
+LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # HEP OSlibs
 RUN yum -y install epel-release
