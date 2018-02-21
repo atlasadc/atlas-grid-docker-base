@@ -13,7 +13,9 @@ RUN rpm -qa > /var/lib/package-list
 RUN rm -fr /var/lib/yum/* /var/cache/yum/* /usr/lib/locale/* /usr/share/locale/* /usr/share/doc/* /boot/*
 
 # Timestamp
-RUN /bin/sh -c 'touch /creation-date-`date +%Y%m%d%H%M%S`'
+RUN /bin/sh -c 'TS=`date +%Y%m%d%H%M%S`; echo $TS > /docker-creation-date'
+RUN /bin/sh -c 'echo "export CDATE_DOCKER=\"`cat /docker-creation-date`\"" > /etc/profile.d/container-date.sh'
+RUN /bin/sh -c 'echo "setenv CDATE_DOCKER \"`cat /docker-creation-date`\"" > /etc/profile.d/container-date.csh'
 
 # Create site dirs
 RUN mkdir -p /scratch /gpfs/work /gpfs/scratch /cvmfs /etc/grid-security/certificates /var/lib/condor /srv /alrb
