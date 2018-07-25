@@ -1,5 +1,5 @@
 FROM centos:6
-ENV HEP_OSLIBS_VER 1.1.4-1.el6
+ENV HEP_OSLIBS_VER 1.1.5-1.el6
 LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # HEP OSlibs
