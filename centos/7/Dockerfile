@@ -6,6 +6,9 @@ LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 RUN yum -y install epel-release && \
     yum -y install http://linuxsoft.cern.ch/wlcg/centos7/x86_64/HEP_OSlibs-${HEP_OSLIBS_VER}.x86_64.rpm && \
     #
+    # Missing lib for nested singularity
+    yum -y install libseccomp && \
+    #
     # Final update and creation of the package list
     yum -y update && \
     rpm -qa > /var/lib/package-list && \

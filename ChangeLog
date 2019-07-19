@@ -1,3 +1,6 @@
+2019-07-20 15:00:00 Alessandro De Salvo
+	* Add libseccomp rpm to the base image for nested singularity exec
+
 2018-07-25 16:45:00 Alessandro De Salvo
 	* Update base image
 
