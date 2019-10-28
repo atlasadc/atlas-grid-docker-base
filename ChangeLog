@@ -1,3 +1,6 @@
+2019-10-28 17:20:00 Alessandro De Salvo
+	* Add texinfo and update HEP_OSlibs versions
+
 2019-07-20 15:00:00 Alessandro De Salvo
 	* Add libseccomp rpm to the base image for nested singularity exec
 

@@ -1,5 +1,5 @@
 FROM centos:7
-ENV HEP_OSLIBS_VER 7.2.6-1.el7.cern
+ENV HEP_OSLIBS_VER 7.2.12-2.el7.cern
 LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # HEP OSLibs
@@ -8,6 +8,9 @@ RUN yum -y install epel-release && \
     #
     # Missing lib for nested singularity
     yum -y install libseccomp && \
+    #
+    # Other packages
+    yum -y install texinfo && \
     #
     # Final update and creation of the package list
     yum -y update && \
