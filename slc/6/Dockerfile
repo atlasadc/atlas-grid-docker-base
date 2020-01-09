@@ -6,7 +6,7 @@ LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 RUN yum -y install http://linuxsoft.cern.ch/wlcg/sl6/x86_64/HEP_OSlibs_SL6-${HEP_OSLIBS_VER}.x86_64.rpm && \
   #
   # Other packages
-  yum -y install texinfo && \
+  yum -y install texinfo libcurl-devel && \
   #
   # Final update and creation of the package list
   yum -y update && \

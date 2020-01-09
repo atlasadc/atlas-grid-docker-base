@@ -10,7 +10,7 @@ RUN yum -y install epel-release && \
     yum -y install libseccomp && \
     #
     # Other packages
-    yum -y install texinfo && \
+    yum -y install texinfo libcurl-devel && \
     #
     # Final update and creation of the package list
     yum -y update && \
