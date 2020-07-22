@@ -1,5 +1,5 @@
 FROM centos:7
-ENV HEP_OSLIBS_VER 7.2.12-2.el7.cern
+ENV HEP_OSLIBS_VER 7.2.14-1.el7.cern
 LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # HEP OSLibs
