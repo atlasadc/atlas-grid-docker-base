@@ -1,10 +1,10 @@
-FROM centos:7
-ENV HEP_OSLIBS_VER 7.3.1-2.el7.cern
+FROM cern/cs8-base
+ENV HEP_OSLIBS_VER 8.0.1-2.el8.cern
 LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
 # HEP OSLibs
 RUN yum -y install epel-release && \
-    yum -y install http://linuxsoft.cern.ch/wlcg/centos7/x86_64/HEP_OSlibs-${HEP_OSLIBS_VER}.x86_64.rpm && \
+    yum -y install http://linuxsoft.cern.ch/wlcg/centos8/x86_64/HEP_OSlibs-${HEP_OSLIBS_VER}.x86_64.rpm && \
     #
     # Missing lib for nested singularity
     yum -y install libseccomp && \
