@@ -1,3 +1,6 @@
+2021-10-26 18:15:00 Alessandro De Salvo
+	* Add initial support for CentOS 9 stream
+
 2021-10-26 15:32:00 Alessandro De Salvo
 	* Enable multi-arch build for amd64 and arm64 for centos 7 and 8 stream
 
