@@ -14,7 +14,7 @@ RUN if [ "$TARGETPLATFORM" == "linux/amd64" ] ; then \
       yum -y install libseccomp && \
       #
       # Other packages
-      yum -y install texinfo libcurl-devel strace python3 python3-devel man-db && \
+      yum -y install texinfo libcurl-devel strace python3 python3-devel man-db hostname openldap bind-utils && \
       #
       # Final update and creation of the package list
       yum -y update && \
