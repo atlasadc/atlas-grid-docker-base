@@ -15,4 +15,4 @@ if [ -z "$OSREL" ] ; then
   exit
 fi
 
-docker buildx build -t atlasadc/atlas-grid-${OSREL}-base --platform linux/amd64,linux/arm64 --push .
+docker buildx build -t atlasadc/atlas-grid-${OSREL}-base --ulimit "nofile=1048576:1048576" --platform linux/amd64,linux/arm64 --push .
