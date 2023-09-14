@@ -1,5 +1,5 @@
 FROM centos:7
-ENV HEP_OSLIBS_VER 7.3.1-2.el7.cern
+ENV HEP_OSLIBS_VER 7.3.5-2.el7.cern
 ARG TARGETPLATFORM
 LABEL maintainer="Alessandro.DeSalvo@roma1.infn.it"
 
