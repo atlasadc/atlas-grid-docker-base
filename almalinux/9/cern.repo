@@ -1,0 +1,7 @@
+[cern] 
+name=AlmaLinux $releasever - CERN 
+baseurl=http://linuxsoft.cern.ch/cern/alma/$releasever/CERN/$basearch 
+gpgcheck=1 
+enabled=1 
+priority=5 
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-kojiv2 

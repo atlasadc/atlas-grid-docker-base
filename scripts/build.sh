@@ -16,3 +16,4 @@ if [ -z "$OSREL" ] ; then
 fi
 
 docker buildx build -t atlasadc/atlas-grid-${OSREL}-base --ulimit "nofile=1048576:1048576" --platform linux/amd64,linux/arm64 --push .
+docker buildx build -t registry.cern.ch/atlasadc/atlas-grid-${OSREL}-base --ulimit "nofile=1048576:1048576" --platform linux/amd64,linux/arm64 --push .
