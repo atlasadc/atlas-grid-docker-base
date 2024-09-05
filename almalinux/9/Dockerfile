@@ -23,6 +23,9 @@ RUN if [ "$TARGETPLATFORM" == "linux/amd64" ] ; then \
       # CERN certificates
       dnf -y install CERN-CA-certs && \
       #
+      # Update crypto policies to accept SHA-1 certificates
+      update-crypto-policies --set DEFAULT:SHA1 && \
+      #
       # Final update and creation of the package list
       dnf -y update && \
       rpm -qa > /var/lib/package-list && \
@@ -43,6 +46,9 @@ RUN if [ "$TARGETPLATFORM" == "linux/amd64" ] ; then \
       #
       # CERN certificates
       dnf -y install CERN-CA-certs && \
+      #
+      # Update crypto policies to accept SHA-1 certificates
+      update-crypto-policies --set DEFAULT:SHA1 && \
       #
       # Final update and creation of the package list
       dnf -y update && \
